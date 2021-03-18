@@ -17,9 +17,25 @@ Headers:
 | `SID`                                  | ?uint64     |
 
 This method will return a full user object (in json) from either the BDID or SID. Leave one null and use the other.
-If account is null, it will return blank JSON object. If SAT is included, account will be generated if null.
+If account is null, it will return blank JSON object.
 
-If SAT is passed along, it will also do an update to recache the name from the platform provider.
+## ** Authenticate Steam User **
+
+* GET `/AuthenticateSteamUser`
+
+Requires SAT: False
+
+Headers:
+
+| Variable                               | Data Type   |
+| -------------------------------------- | ----------- |
+| `SID`                                  | uint64      |
+| `Ticket`                               | string      |
+
+This method will return a BDID or nothing if it failed/ticket is invalid. 
+
+This method is used by every server (offical, and unoffical) and used to authenticate users.
+If the user does not exsist in the backend, it will create a new one and return the BDID of the new user.
 
 -----------------
 
