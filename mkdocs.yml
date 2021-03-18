@@ -1,0 +1,13 @@
+site_name: Big Dream API
+
+markdown_extensions:
+  - admonition
+
+theme:
+  name: material
+  palette:
+    primary: lime
+    scheme: slate
+    accent: indigo
+  logo: assets/logo.png
+  favicon: assets/logo.png
