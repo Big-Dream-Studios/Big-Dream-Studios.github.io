@@ -19,6 +19,8 @@ Headers:
 This method will return a full user object (in json) from either the BDID or SID. Leave one null and use the other.
 If account is null, it will return blank JSON object.
 
+-----------------
+
 ## ** Authenticate Steam User **
 
 * GET `/AuthenticateSteamUser`
