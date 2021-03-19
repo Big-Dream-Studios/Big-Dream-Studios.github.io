@@ -6,7 +6,7 @@ Mainly used for Zoo Strikers game.
 
 --------------
 
-Standard communication protocol is over HTTP requests.
+Standard communication protocol is over HTTPS requests.
 
 API endpoint for BDAPI is `http://api.zoostrikers.com`
 
