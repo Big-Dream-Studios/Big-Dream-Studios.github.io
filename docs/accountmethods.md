@@ -31,7 +31,6 @@ Headers:
 
 | Variable                               | Data Type   |
 | -------------------------------------- | ----------- |
-| `SID`                                  | uint64      |
 | `Ticket`                               | string      |
 
 This method will return a BDID or nothing if it failed/ticket is invalid. 
