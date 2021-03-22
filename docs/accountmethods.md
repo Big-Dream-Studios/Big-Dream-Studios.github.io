@@ -40,6 +40,23 @@ If the user does not exsist in the backend, it will create a new one and return 
 
 -----------------
 
+## ** Give Species **
+
+* GET `/UnlockSpecies`
+
+Requires SAT: true
+
+Headers:
+
+| Variable                               | Data Type   |
+| -------------------------------------- | ----------- |
+| `SID`                                  | uint64      |
+| `Species`                              | int         |
+
+This method will give the user the species passed in by the header.
+
+-----------------
+
 ## ** Increment Kills **
 
 * GET `/IncrementKills`
