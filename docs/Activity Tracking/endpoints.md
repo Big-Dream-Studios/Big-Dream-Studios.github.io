@@ -4,7 +4,9 @@ The endpoints for the player activity tracking library are:
 
 --------------
 
-`http(s)://ip/api/PingActivity/{accountID}/{ticket}` - This will ping the api to know the player is still online, this should be called every 60s or less from the client.
+* GET `/api/PingActivity/{accountID}/{ticket}`
+
+ - This will ping the api to know the player is still online, this should be called every 60s or less from the client.
 
 Possible Results:
 
@@ -16,7 +18,9 @@ Possible Results:
 
 --------------
 
-`http(s)://ip/api/AuthenticatePlayer/{accountID}/{token}` - This will attempt to authenticate a player and mark them as online.
+* GET `/api/AuthenticatePlayer/{accountID}/{token}`
+
+ - This will attempt to authenticate a player and mark them as online.
 
 Possible Results:
 
@@ -26,7 +30,9 @@ Possible Results:
 
 --------------
 
-`http(s)://ip/api/ValidateTicket/{accountID}/{ticket}/{authkey}` - This is used by dedicated servers to validate that a user is who they say they are.
+* GET `/api/ValidateTicket/{accountID}/{ticket}/{authkey}`
+
+ - This is used by dedicated servers to validate that a user is who they say they are.
 
 Possible Results:
 
