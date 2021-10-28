@@ -2,8 +2,6 @@
 
 This is the documentation for BOFA Inc shit
 
-Mainly used for Zoo Strikers game.
-
 Browse through APIs on the left or click on one below.
 
 --------------
@@ -15,6 +13,3 @@ Browse through APIs on the left or click on one below.
 
 
 [![Logo](assets/bs.png){ align=left }](STUN/index.md)
-
-
-[![Logo](assets/logo.png){ align=left }](BDAPI/index.md)

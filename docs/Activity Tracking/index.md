@@ -2,10 +2,9 @@
 
 ![Logo](assets/bat.png){ align=left }
 
+--------------
 
 This is the documentation for BOFA.ActivityTracking
-
---------------
 
 What is it?
 
