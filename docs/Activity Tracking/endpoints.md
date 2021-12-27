@@ -18,6 +18,30 @@ Possible Results:
 
 --------------
 
+* GET `/api/QueueCasual/{accountID}/{ticket}`
+
+ - This will ping the api to know the player is wanting to enter the casual matchmaking queue.
+
+Possible Results:
+
+`Unauthorized` (401) - The ticket does not match the one in the redis database, reauthenticate or close game.
+
+`Ok` (200) - Success.
+
+--------------
+
+* GET `/api/DequeueCasual/{accountID}/{ticket}`
+
+ - This will ping the api to know the player is wanting to leave the casual matchmaking queue.
+
+Possible Results:
+
+`Unauthorized` (401) - The ticket does not match the one in the redis database, reauthenticate or close game.
+
+`Ok` (200) - Success.
+
+--------------
+
 * GET `/api/AuthenticatePlayer/{accountID}/{token}`
 
  - This will attempt to authenticate a player and mark them as online.
@@ -33,6 +57,20 @@ Possible Results:
 * GET `/api/ValidateTicket/{accountID}/{ticket}/{authkey}`
 
  - This is used by dedicated servers to validate that a user is who they say they are.
+
+Possible Results:
+
+`Unauthorized` (401) - The token is not accepted or auth key doesnt match, remove the user.
+
+`NotFound` (404) - User account not found as online.
+
+`Ok` (200) - Success, also returns "OK".
+
+--------------
+
+* GET `/api/MatchEnded/{accountID}/{authkey}`
+
+ - This is used by dedicated servers to let the backend know that this player is no longer in a match.
 
 Possible Results:
 
