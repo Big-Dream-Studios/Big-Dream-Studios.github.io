@@ -68,14 +68,14 @@ Possible Results:
 
 --------------
 
-* GET `/api/MatchEnded/{accountID}/{authkey}`
+* GET `/api/MatchEnded/{serverName}/{authkey}`
 
- - This is used by dedicated servers to let the backend know that this player is no longer in a match.
+ - This is used by dedicated servers to let the backend know that this server has ended its match.
 
 Possible Results:
 
-`Unauthorized` (401) - The token is not accepted or auth key doesnt match, remove the user.
+`Unauthorized` (401) - The token is not accepted or auth key doesnt match.
 
-`NotFound` (404) - User account not found as online.
+`NotFound` (404) - Server not found as online.
 
 `Ok` (200) - Success, also returns "OK".
