@@ -79,3 +79,17 @@ Possible Results:
 `NotFound` (404) - Server not found as online.
 
 `Ok` (200) - Success, also returns "OK".
+
+--------------
+
+* GET `/api/GetTeam/{serverName}/{accountID}/{authkey}`
+
+ - This is used by dedicated servers to get a players team.
+
+Possible Results:
+
+`Unauthorized` (401) - The token is not accepted or auth key doesnt match.
+
+`NotFound` (404) - Server not found as online.
+
+`Ok` (200) - Success, also returns an int of the players team.
