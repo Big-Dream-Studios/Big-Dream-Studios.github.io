@@ -139,3 +139,88 @@ Headers:
 | `Damage`                               | int         |
 
 This method will increase the damage amount on the users profile, based on the amount of damage passed in.
+
+-----------------
+
+## ** Increment Casual Kills **
+
+* GET `/IncrementCasualKills`
+
+Requires SAT: true
+
+Headers:
+
+| Variable                               | Data Type   |
+| -------------------------------------- | ----------- |
+| `SID`                                  | uint64      |
+| `Kills`                                | int         |
+
+This method will increase the kill amount on the users profile, based on the amount of kills passed in.
+
+-----------------
+
+## ** Increment Casual Deaths **
+
+* GET `/IncrementCasualDeaths`
+
+Requires SAT: true
+
+Headers:
+
+| Variable                               | Data Type   |
+| -------------------------------------- | ----------- |
+| `SID`                                  | uint64      |
+| `Deaths`                               | int         |
+
+This method will increase the death amount on the users profile, based on the amount of deaths passed in.
+
+-----------------
+
+## ** Increment Casual Wins **
+
+* GET `/IncrementCasualWins`
+
+Requires SAT: true
+
+Headers:
+
+| Variable                               | Data Type   |
+| -------------------------------------- | ----------- |
+| `SID`                                  | uint64      |
+| `Wins`                                 | int         |
+
+This method will increase the win amount on the users profile, based on the amount of wins passed in.
+
+-----------------
+
+## ** Increment Casual Loses **
+
+* GET `/IncrementCasualLoses`
+
+Requires SAT: true
+
+Headers:
+
+| Variable                               | Data Type   |
+| -------------------------------------- | ----------- |
+| `SID`                                  | uint64      |
+| `Loses`                                | int         |
+
+This method will increase the loses amount on the users profile, based on the amount of loses passed in.
+
+-----------------
+
+## ** Increment Casual Damage **
+
+* GET `/IncrementCasualDamage`
+
+Requires SAT: true
+
+Headers:
+
+| Variable                               | Data Type   |
+| -------------------------------------- | ----------- |
+| `SID`                                  | uint64      |
+| `Damage`                               | int         |
+
+This method will increase the damage amount on the users profile, based on the amount of damage passed in.
